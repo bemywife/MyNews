@@ -1,6 +1,7 @@
 package com.fightzhao.news.base;
 
 import com.fightzhao.news.callback.RequestCallback;
+import com.socks.library.KLog;
 
 import rx.Subscription;
 
@@ -35,21 +36,25 @@ public class BasePresenterImpl<V extends BaseView, D> implements BasePresenter, 
 
     @Override
     public void beforeRequest() {
-            mView.showProgress();
+        mView.showProgress();
     }
 
     @Override
     public void requestError(String msg) {
-        
+        KLog.e(msg);
+        // TODO: 16/8/11 用户角度出发,要不要Toast 
+        mView.toast(msg);
+        mView.showRequest();
+        mView.hideProgress();
     }
 
     @Override
     public void requestComplete() {
-
+        mView.hideProgress();
     }
 
     @Override
-    public void requusetSuccess(D data) {
+    public void requestSuccess(D data) {
 
     }
 }

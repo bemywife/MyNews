@@ -27,5 +27,5 @@ public interface RequestCallback<D> {
      *
      * @param data
      */
-    void requusetSuccess(D data);
+    void requestSuccess(D data);
 }
