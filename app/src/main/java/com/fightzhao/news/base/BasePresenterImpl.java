@@ -7,7 +7,7 @@ import rx.Subscription;
 
 /**
  * fightzhao on 16/8/9.
- * Function :
+ * Function : Presenter的实现类,必须持有View和Data
  */
 public class BasePresenterImpl<V extends BaseView, D> implements BasePresenter, RequestCallback<D> {
 
