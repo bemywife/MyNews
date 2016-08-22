@@ -4,6 +4,7 @@ import android.support.annotation.NonNull;
 import android.util.SparseArray;
 
 import com.fightzhao.news.app.App;
+import com.fightzhao.news.bean.news.NeteastNewsSummary;
 import com.fightzhao.news.http.Api;
 import com.fightzhao.news.http.HostType;
 import com.fightzhao.news.http.service.NewsService;
@@ -182,11 +183,9 @@ public class RetrofitManager {
 
     /**
      * 网易新闻列表 例子：http://c.m.163.com/nc/article/headline/T1348647909107/0-20.html
-     * <p>
      * 对API调用了observeOn(MainThread)之后，线程会跑在主线程上，包括onComplete也是，
      * unsubscribe也在主线程，然后如果这时候调用call.cancel会导致NetworkOnMainThreadException
      * 加一句unsubscribeOn(io)
-     *
      * @param type      新闻类别：headline为头条,list为其他
      * @param id        新闻类别id
      * @param startPage 开始的页码

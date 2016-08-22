@@ -7,9 +7,11 @@ import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.r0adkll.slidr.model.SlidrConfig;
-import com.r0adkll.slidr.model.SlidrInterface;
-import com.r0adkll.slidr.widget.SliderPanel;
+import com.fightzhao.news.R;
+import com.fightzhao.news.utils.slidr.model.SlidrConfig;
+import com.fightzhao.news.utils.slidr.model.SlidrInterface;
+import com.fightzhao.news.utils.slidr.widget.SliderPanel;
+
 
 /**
  * This attacher class is used to attach the sliding mechanism to any {@link Activity}
@@ -25,7 +27,7 @@ public class Slidr {
      * Attach a slideable mechanism to an activity that adds the slide to dismiss functionality
      *
      * @param activity      the activity to attach the slider to
-     * @return              a {@link com.r0adkll.slidr.model.SlidrInterface} that allows
+     * @return              a {@link SlidrInterface} that allows
      *                      the user to lock/unlock the sliding mechanism for whatever purpose.
      */
     public static SlidrInterface attach(Activity activity){
@@ -41,7 +43,7 @@ public class Slidr {
      * @param statusBarColor2   the primaryDark status bar color of the activity this is attaching to that will transition
      *                          back to the statusBarColor1 color
      *
-     * @return              a {@link com.r0adkll.slidr.model.SlidrInterface} that allows
+     * @return              a {@link SlidrInterface} that allows
      *                      the user to lock/unlock the sliding mechanism for whatever purpose.
      */
     public static SlidrInterface attach(final Activity activity, final int statusBarColor1, final int statusBarColor2){
@@ -87,11 +89,11 @@ public class Slidr {
     }
 
     /**
-     * Attach a slider mechanism to an activity based on the passed {@link com.r0adkll.slidr.model.SlidrConfig}
+     * Attach a slider mechanism to an activity based on the passed {@link SlidrConfig}
      *
      * @param activity      the activity to attach the slider to
      * @param config        the slider configuration to make
-     * @return              a {@link com.r0adkll.slidr.model.SlidrInterface} that allows
+     * @return              a {@link SlidrInterface} that allows
      *                      the user to lock/unlock the sliding mechanism for whatever purpose.
      */
     public static SlidrInterface attach(final Activity activity, final SlidrConfig config){

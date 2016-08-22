@@ -13,7 +13,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
-import com.r0adkll.slidr.model.SlidrConfig;
+import com.fightzhao.news.utils.slidr.model.SlidrConfig;
+
 
 /**
  * Project: PilotPass

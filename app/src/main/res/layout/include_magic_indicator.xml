@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navigator_common_height"
+    android:orientation="horizontal">
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="24dp"
+        android:layout_height="14dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_add_channel"
+        android:gravity="center" />
+
+
+</LinearLayout>

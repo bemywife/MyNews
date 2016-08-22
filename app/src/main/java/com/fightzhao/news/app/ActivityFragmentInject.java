@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * fightzhao on 16/8/12.
- * Function :
+ * Function : Activity、Fragment初始化的用到的注解
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})

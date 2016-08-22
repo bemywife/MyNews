@@ -1,5 +1,7 @@
 package com.fightzhao.news.http.service;
 
+import com.fightzhao.news.bean.news.NeteastNewsSummary;
+
 import java.util.List;
 import java.util.Map;
 

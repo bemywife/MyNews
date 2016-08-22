@@ -1,10 +1,14 @@
+// 声明是Android程序
 apply plugin: 'com.android.application'
 
 android {
+    // 编译SDK的版本
     compileSdkVersion 24
+    // build tools的版本
     buildToolsVersion "24.0.1"
 
     defaultConfig {
+        // 应用的包名
         applicationId "com.fightzhao.news"
         minSdkVersion 15
         targetSdkVersion 24
@@ -13,7 +17,9 @@ android {
     }
     buildTypes {
         release {
+            // 是否进行混淆
             minifyEnabled false
+            // 混淆文件的位置
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
